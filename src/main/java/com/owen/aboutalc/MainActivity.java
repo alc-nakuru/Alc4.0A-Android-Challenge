@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener
 {
 
+   //This can me made local variables in the oncreated method
     private Button btnProfile;
     private Button btnAboutAlc;
 
@@ -18,7 +19,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
+        //Local varibales 
+        Button btnAbout = findViewById(R.id.btn_aboutAlc);
+        //same applies to the other buttons;
         btnAboutAlc = (Button) findViewById(R.id.btn_aboutAlc);
         btnProfile = (Button) findViewById(R.id.btn_MyProfile);
 
